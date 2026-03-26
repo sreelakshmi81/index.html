@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chatbot Workshop Registration</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #333;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .header {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+    }
+
+    .header p {
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .info, .form-section {
+      flex: 1;
+      padding: 30px;
+      min-width: 300px;
+    }
+
+    .info {
+      background: #f3f4f6;
+    }
+
+    .info h2 {
+      margin-bottom: 15px;
+    }
+
+    .info ul {
+      list-style: none;
+    }
+
+    .info li {
+      margin-bottom: 15px;
+      padding-left: 22px;
+      position: relative;
+    }
+
+    .info li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #667eea;
+      font-weight: bold;
+    }
+
+    .form-section h2 {
+      margin-bottom: 20px;
+    }
+
+    form input, form select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    form button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: #667eea;
+      color: white;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background: #4f46e5;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 15px;
+      background: #111827;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    @media(max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>AI Chatbot Workshop</h1>
+      <p>Build Your Own Intelligent Chatbot</p>
+    </div>
+
+    <div class="content">
+
+      <!-- Info Section -->
+      <div class="info">
+        <h2>What You’ll Learn</h2>
+        <ul>
+          <li><strong>LLM Integration:</strong> Learn how to tap into the brains of AI.</li>
+          <li><strong>Custom Design:</strong> Create a bot that actually sounds human.</li>
+          <li><strong>Project Ready:</strong> Ideal for your final year projects.</li>
+        </ul>
+      </div>
+
+      <!-- Form Section -->
+      <div class="form-section">
+        <h2>Register Now</h2>
+
+        <form>
+          <input type="text" placeholder="Full Name" required>
+
+          <input type="text" placeholder="Department (e.g., CSE, BCA)" required>
+
+          <input type="number" placeholder="Semester (e.g., 1-8)" min="1" max="10" required>
+
+          <input type="text" placeholder="Register ID" required>
+
+          <input type="tel" placeholder="Phone Number" required>
+
+          <input type="email" placeholder="Email Address" required>
+
+          <button type="submit">Register</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      © 2026 AI Workshop | All Rights Reserved
+    </div>
+
+  </div>
+
+</body>
+</html>
